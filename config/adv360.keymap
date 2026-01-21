@@ -22,6 +22,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        to_base_layer {
+            bindings = <&to 0>;
+            key-positions = <0 73>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
