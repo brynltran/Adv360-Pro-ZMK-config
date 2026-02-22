@@ -72,7 +72,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                         &trans     &trans  &trans          &mmv MOVE_UP    &trans           &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans      &trans  &trans  &trans     &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                     &trans      &trans                     &trans  &trans          &trans          &trans           &trans  &trans
-&mo 4   &trans  &trans  &trans  &trans          &mkp LCLK  &trans  &trans      &trans  &trans  &mkp RCLK          &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &mkp LCLK  &trans  &trans      &trans  &trans  &mkp RCLK          &trans          &trans          &trans           &trans  &trans
             >;
         };
 
