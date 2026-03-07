@@ -33,19 +33,6 @@
             bindings = <&kp>, <&kp>;
         };
 
-        mmv_default: mmv_default {
-            compatible = "zmk,behavior-mouse-move";
-            label = "MMV_DEFAULT";
-            #binding-cells = <1>;
-            time-to-max-speed-ms = <50>;
-        };
-
-        mmv_mod: mmv_mod {
-            compatible = "zmk,behavior-mouse-move";
-            label = "MMV_MOD";
-            #binding-cells = <1>;
-            time-to-max-speed-ms = <250>;
-        };
     };
 
     combos {
@@ -96,8 +83,8 @@
         mouse_movement_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                         &trans     &trans  &trans          &trans          &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                         &trans     &trans  &trans               &mmv_default NORM_MOVE_UP    &trans                &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans      &trans  &trans  &trans     &trans  &mmv_default NORM_MOVE_LEFT  &mmv_default NORM_MOVE_DOWN  &mmv_default NORM_MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                         &trans     &trans  &trans               &mmv NORM_MOVE_UP    &trans                &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans      &trans  &trans  &trans     &trans  &mmv NORM_MOVE_LEFT  &mmv NORM_MOVE_DOWN  &mmv NORM_MOVE_RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                     &trans      &trans                     &trans  &trans          &trans          &trans           &trans  &trans
 &trans  &trans  &trans  &mo 5   &mo 6           &mkp LCLK  &trans  &trans      &trans  &trans  &mkp RCLK          &trans          &trans          &trans           &trans  &trans
             >;
@@ -117,8 +104,8 @@
             display-name = "FastMouse";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                         &trans     &trans  &trans               &trans                  &trans                   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                         &trans     &trans  &trans               &mmv_mod FAST_MOVE_UP   &trans                   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans      &trans  &trans  &trans     &trans  &mmv_mod FAST_MOVE_LEFT  &mmv_mod FAST_MOVE_DOWN  &mmv_mod FAST_MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                         &trans     &trans  &trans               &mmv FAST_MOVE_UP   &trans                   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans      &trans  &trans  &trans     &trans  &mmv FAST_MOVE_LEFT  &mmv FAST_MOVE_DOWN  &mmv FAST_MOVE_RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                     &trans      &trans                     &trans  &trans               &trans                  &trans                   &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans     &trans  &trans      &trans  &trans  &trans             &trans               &trans                  &trans                   &trans  &trans
             >;
@@ -128,8 +115,8 @@
             display-name = "PrecMouse";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                         &trans     &trans  &trans               &trans                  &trans                   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                         &trans     &trans  &trans               &mmv_mod PREC_MOVE_UP   &trans                   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans      &trans  &trans  &trans     &trans  &mmv_mod PREC_MOVE_LEFT  &mmv_mod PREC_MOVE_DOWN  &mmv_mod PREC_MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                         &trans     &trans  &trans               &mmv PREC_MOVE_UP   &trans                   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans      &trans  &trans  &trans     &trans  &mmv PREC_MOVE_LEFT  &mmv PREC_MOVE_DOWN  &mmv PREC_MOVE_RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                     &trans      &trans                     &trans  &trans               &trans                  &trans                   &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans     &trans  &trans      &trans  &trans  &trans             &trans               &trans                  &trans                   &trans  &trans
             >;
